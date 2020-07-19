@@ -1,0 +1,78 @@
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 10px;
+}
+
+table {
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 9px;
+
+}
+
+input {
+  vertical-align: middle;
+}
+
+
+
+
+
+.b {
+  text-align: left;
+  line-height: 20px;
+  margin: 0px;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.d {
+  vertical-align: text-top;
+  padding: 0px;
+  margin: 0px;
+  pointer-events: none;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+#container {
+  display: grid;
+  grid-gap: 0em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  height: 100px;
+  width: 00px;
+}
+
+.grid-item {
+  padding: 5px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 7px;
+
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.square {
+  width: 20px;
+  height: 20px;
+}
+
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}

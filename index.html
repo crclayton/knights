@@ -1,0 +1,88 @@
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+<p>
+  <b>Controls</b>
+</p>
+<table>
+<tr>
+<td><b>Hover</b></td><td>Shows you the locations a knight can reach from the location you're pointing at</td>
+</tr>
+<tr>
+<td><b>Left-click</b></td><td> Marks square as unavailable -- controlled by opponent or occupied by own piece</td> 
+</tr>
+<tr>
+<td><b>Middle-click</b></td><td> Locks/unlocks the knight location</td>
+</tr>
+
+</table>
+
+<p>
+  <b>Legend</b>
+</p>
+<table>
+  <tr>
+    <td>
+      <div class="square" style="background:#597368" />
+    </td>
+    <td><input type="checkbox" style="visibility:hidden" checked="true"></td><td>Knight starting location</td>
+
+  </tr>
+  <tr>
+    <td>
+      <div class="square" style="background:#327556" />
+    </td>
+    <td><input type="checkbox" id="mv1" checked="true"></td><td>One move away</td>
+
+  </tr>
+  <tr>
+    <td>
+      <div class="square" style="background:#A3D8BF" />
+    </td>
+    <td><input type="checkbox" id="mv2" checked="true"></td><td>Two moves away</td>
+
+  </tr>
+  <tr>
+    <td>
+      <div class="square" style="background:#EDF7F3" />
+    </td>
+    <td><input type="checkbox" id="mv3" checked="true"></td><td>Three moves away</td>
+
+  </tr>
+  <tr>
+    <td>
+      <div class="square" style="background:#DFDFDF" />
+    </td>
+    <td><input type="checkbox" id="mv4"></td><td>Four moves away (might run slower when enabled)</td>
+ 
+  </tr>
+  <tr>
+  <td>      <div class="square" style="border:1px solid red" /></td><td><input type="checkbox" style="visibility:hidden" checked="true"></td>
+    <td id="banned">Unavailable squares (none)</td>
+  </tr>
+    <tr>
+  <td>      <div class="square" style="border:1px solid black" /></td><td><input type="checkbox" style="visibility:hidden" checked="true"></td>
+    <td id="status">Fixed origin square (none)</td>
+  </tr>
+
+ 
+</table>
+
+
+<p>
+  <b>Board</b>
+</p>
+
+<div id="container">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
